@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>404</title>
+    <script>
+        window.onload = function () {
+            document.getElementById('dino').src = window.location.host + "/img/dino.gif";
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <img id="dino" src="img/dino.gif" alt="dino">
+        <img id="dino" src="" alt="dino">
         <h1>404</h1>
     </div>
 </body>
