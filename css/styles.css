@@ -1,0 +1,36 @@
+@font-face {
+    font-family: sketch-3d;
+    src: url(../fonts/Sketch_3D.woff);
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(../fonts/VCR_OSD_MONO_1.001.ttf);
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    font-family: pixel;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#dino {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+}

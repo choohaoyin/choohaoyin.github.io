@@ -1,1 +1,41 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>1</title>
+</head>
+<body>
+    <div class="container">
+        <img id="dino" src="img/dino.gif" alt="dino">
+        <h1>nothing here,<br>yet</h1>
+    </div>
+    <script>
+    var backward = false;
+        setInterval(function(){
+            // console.log(document.title.slice(0, document.title.length -1));
+            var title = document.title;
+            var length = title.length;
+            var last = title.charAt(length - 1);
+            if(length >= 10) {
+                backward = true;
+            }
+            if(backward) {
+                if(length == 2) {
+                    backward = false;
+                }
+                document.title = title.slice(0, length -1);
+            } else {
+                if(last == "1") {
+                document.title += "0"; 
+                }
+                if(last == "0") {
+                document.title += "1"; 
+                }
+            }
+        }
+        , 500);
+    </script>
+</body>
+</html>
