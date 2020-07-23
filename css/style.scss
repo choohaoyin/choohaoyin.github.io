@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .down-arrow {
     filter: invert(1);
     animation: arrow ease-in-out 2s infinite;
@@ -14,4 +18,8 @@
     100% {
         transform: translate(0,-10px) scale(1);
     }
+}
+
+.logo {
+    width: 80px;
 }
