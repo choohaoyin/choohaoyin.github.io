@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 .down-arrow {
@@ -22,4 +23,18 @@ html {
 
 .logo {
     width: 80px;
+}
+
+.social {
+    transition: 0.1s ease;
+    cursor: pointer;
+
+    &:hover {
+        filter: invert(1);
+    }
+}
+
+.photo {
+    height: 400px;
+    width: 300px;
 }

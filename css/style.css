@@ -1,5 +1,9 @@
 html {
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .down-arrow {
@@ -42,5 +46,21 @@ html {
 
 .logo {
   width: 80px;
+}
+
+.social {
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.social:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.photo {
+  height: 400px;
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
