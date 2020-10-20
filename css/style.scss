@@ -1,3 +1,7 @@
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+
 html {
     scroll-behavior: smooth;
     user-select: none;
@@ -26,7 +30,7 @@ html {
 }
 
 .social {
-    transition: 0.1s ease;
+    transition: 0.2s ease;
     cursor: pointer;
 
     &:hover {
@@ -35,6 +39,89 @@ html {
 }
 
 .photo {
-    height: 400px;
-    width: 300px;
+    height: 350px;
+    max-width: 350px;
+
+    img {
+        object-position: 50% 35%;
+    }
+}
+
+.portfolio-box {
+    height: 350px;
+
+    .portfolio-img {
+        object-position: top;
+
+        &.active{
+            animation: portfolio-img-scroll 15s infinite 2s;
+        }
+
+        &.disabled {
+            object-position: center;
+        }
+    }
+
+    &.disabled {
+        @media screen and (max-width: $lg) {
+            height: 150px;
+        }
+    }
+}
+
+.tag {
+    color: white;
+
+    .html {
+        background-color: orangered;
+    }
+
+    .css {
+        background-color: royalblue;
+    }
+
+    .bootstrap {
+        background-color: rebeccapurple;
+    }
+
+    .js {
+        color: black;
+        background-color: gold;
+    }
+
+    .jquery {
+        background-color: steelblue;
+    }
+}
+
+.portfolio-link {
+    &:hover {
+        .arrow {
+            animation: portfolio-link-arrow 1s infinite;
+        }
+    }
+}
+
+@keyframes portfolio-img-scroll {
+    0% {
+        object-position: top;
+    }
+    80% {
+        object-position: bottom;
+    }
+    100% {
+        object-position: top;
+    }
+}
+
+@keyframes portfolio-link-arrow {
+    0% {
+        transform: translateX(0);
+    }
+    35% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
