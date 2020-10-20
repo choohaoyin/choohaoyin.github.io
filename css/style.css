@@ -180,4 +180,28 @@ html {
             transform: translateX(0);
   }
 }
+
+.error {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.error .icon {
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.error h1 {
+  color: white;
+  font-family: pixel;
+  padding: 0;
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
