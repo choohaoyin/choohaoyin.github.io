@@ -1,0 +1,183 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.down-arrow {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-animation: arrow ease-in-out 2s infinite;
+          animation: arrow ease-in-out 2s infinite;
+  cursor: pointer;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, -10px) scale(1);
+            transform: translate(0, -10px) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px) scale(1.1);
+            transform: translate(0, 10px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px) scale(1);
+            transform: translate(0, -10px) scale(1);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, -10px) scale(1);
+            transform: translate(0, -10px) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px) scale(1.1);
+            transform: translate(0, 10px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px) scale(1);
+            transform: translate(0, -10px) scale(1);
+  }
+}
+
+.logo {
+  width: 80px;
+}
+
+.social {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.social:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.photo {
+  height: 350px;
+  max-width: 350px;
+}
+
+.photo img {
+  -o-object-position: 50% 35%;
+     object-position: 50% 35%;
+}
+
+.portfolio-box {
+  height: 350px;
+}
+
+.portfolio-box .portfolio-img {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.portfolio-box .portfolio-img.active {
+  -webkit-animation: portfolio-img-scroll 15s infinite 2s;
+          animation: portfolio-img-scroll 15s infinite 2s;
+}
+
+.portfolio-box .portfolio-img.disabled {
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio-box.disabled {
+    height: 150px;
+  }
+}
+
+.tag {
+  color: white;
+}
+
+.tag .html {
+  background-color: orangered;
+}
+
+.tag .css {
+  background-color: royalblue;
+}
+
+.tag .bootstrap {
+  background-color: rebeccapurple;
+}
+
+.tag .js {
+  color: black;
+  background-color: gold;
+}
+
+.tag .jquery {
+  background-color: steelblue;
+}
+
+.portfolio-link:hover .arrow {
+  -webkit-animation: portfolio-link-arrow 1s infinite;
+          animation: portfolio-link-arrow 1s infinite;
+}
+
+@-webkit-keyframes portfolio-img-scroll {
+  0% {
+    object-position: top;
+  }
+  80% {
+    object-position: bottom;
+  }
+  100% {
+    object-position: top;
+  }
+}
+
+@keyframes portfolio-img-scroll {
+  0% {
+    -o-object-position: top;
+       object-position: top;
+  }
+  80% {
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  100% {
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+
+@-webkit-keyframes portfolio-link-arrow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  35% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes portfolio-link-arrow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  35% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
