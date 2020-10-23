@@ -60,13 +60,13 @@ html {
 }
 
 .photo {
-  height: 350px;
-  max-width: 350px;
+  height: 400px;
+  max-width: 330px;
 }
 
 .photo img {
-  -o-object-position: 50% 35%;
-     object-position: 50% 35%;
+  -webkit-transform: scale(1.15) translateY(-20px);
+          transform: scale(1.15) translateY(-20px);
 }
 
 .portfolio-box {
@@ -203,5 +203,10 @@ html {
   font-family: pixel;
   padding: 0;
   margin: 0;
+}
+
+.ul {
+  padding-bottom: 5px;
+  border-bottom: solid 5px;
 }
 /*# sourceMappingURL=style.css.map */
