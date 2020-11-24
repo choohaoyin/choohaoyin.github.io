@@ -119,6 +119,18 @@ html {
   background-color: steelblue;
 }
 
+.tag .scss {
+  background-color: mediumvioletred;
+}
+
+.tag .tailwind {
+  background-color: #51b4d0;
+}
+
+.tag .vue {
+  background-color: #00722c;
+}
+
 .portfolio-link:hover .arrow {
   -webkit-animation: portfolio-link-arrow 1s infinite;
           animation: portfolio-link-arrow 1s infinite;

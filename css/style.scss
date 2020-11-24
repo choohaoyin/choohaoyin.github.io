@@ -40,15 +40,6 @@ html {
     }
 }
 
-// .photo {
-//     height: 350px;
-//     max-width: 350px;
-
-//     img {
-//         object-position: 50% 35%;
-//     }
-// }
-
 .photo {
     height: 400px;
     max-width: 330px;
@@ -102,6 +93,18 @@ html {
 
     .jquery {
         background-color: steelblue;
+    }
+
+    .scss {
+        background-color: mediumvioletred;
+    }
+
+    .tailwind {
+        background-color: rgb(81,180,208);
+    }
+
+    .vue {
+        background-color: rgb(0, 114, 44);
     }
 }
 
